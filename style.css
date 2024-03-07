@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: MonumentExtended;
+  src:url(font/MonumentExtended.otf);
+}
+
+body{
+  width: 1320px;
+  font-family: roboto;
+  padding: 43px 97px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* 1320 */
+
+header {
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.contact-button {
+  margin-left: 40px;
+}
+
+.contact-button,
+.work-button {
+  background-color: transparent;
+  border: none;
+  font-family: montserrat, sans-serif;
+  font-weight: medium;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: montserrat, sans-serif;
+  font-size: 48px;
+  font-size: black;
+  font-weight: 800;
+  color: #3E3E3E;
+}
+
+.h1 {
+  font-size: 128px;
+  font-weight: 800;
+  font-family: MonumentExtended;
+  color: #DD9F92;
+  line-height: 132px;
+}
+
+.h2 {
+  margin-top: 46px;
+  font-size: 24px;
+  width: 600px;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  margin-bottom: 271px;
+}
+
+.application img {
+    margin-top: 15px;
+    height: 68px;
+    margin-right: 11px;
+}
+
+.selected-project {
+  font-size: 24px;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 30px;
+}
+
+.projects-grid img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.social-media {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 100px;
+  column-gap: 17px;
+}
+
+.social-media button {
+  background-color: transparent;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.social-media img {
+  width: 20px;
+}
+
+.instagram-button{
+  padding-top: 4px;
+}
+
+.upwork-button {
+  padding-top: 5px;
+}
+
+.linkedin-button img{
+  width: 17px;
+}
+
+.cta-1 {
+  font-family: poppins;
+  font-size: 59px;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.closure {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.cta-2 {
+  font-family: roboto;
+  font-size: 300px;
+  padding: 0;
+  color: #E9E9E9;
+  text-align: center;
+  margin:-30px auto;
+}
+
+.cta-3 {
+  font-family: roboto;
+  font-size: 21px;
+  width: 214px;
+  height: 60px;
+  border-radius: 107px;
+  position: absolute;
+  top: 95px;
+  left: 560px;
+  cursor: pointer;
+}
+
+.vectorOrange {
+  position: absolute;
+  top: 500px;
+  left: -100px;
+}
+
+.vectorBlue {
+  position: absolute;
+  top: -50px;
+  right: -110px;
+  z-index: -1;
+}
+
+.globe {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+
+footer {
+  padding: 0;
+}
