@@ -58,8 +58,6 @@ body{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 0;
-  padding-bottom: 0;
   position: relative;
 }
 
@@ -85,6 +83,7 @@ header {
   font-weight: medium;
   font-size: 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo {
@@ -193,37 +192,36 @@ header {
   font-family: poppins;
   font-size: 59px;
   text-align: center;
-  margin-bottom: 0;
-  padding: 0;
 }
 
 .closure {
   position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
 }
 
 .cta-2 {
   font-family: roboto;
+  font-weight: 500;
   font-size: 300px;
-  padding: 0;
   color: #E9E9E9;
   text-align: center;
-  margin:-30px auto;
+  margin-top:-30px;
 }
 
 .cta-3 {
-  font-family: roboto;
+  font-family: Poppins;
   font-size: 21px;
   width: 214px;
   height: 60px;
   border-radius: 107px;
   position: absolute;
   top: 95px;
-  left: 560px;
+  left: 42%;
   cursor: pointer;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
 }
 
 .vectorOrange {
@@ -245,6 +243,54 @@ header {
   right: 10px;
 }
 
-footer {
-  padding: 0;
+@media (max-width: 768px){
+  body {
+    margin: 0 50px;
+  }
+
+  header {
+    height: 48px;
+    margin-bottom: 56px;
+  }
+
+  .hero {
+
+  }
+
+  .h1 {
+    font-size: 120px;
+    margin-bottom: 56px;
+    line-height: 132px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    width: 669px;
+    margin-bottom: 175px;
+  }
+
+  .selected-project {
+    text-align: left; 
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-grid img {
+    width: 280px;
+  }
+
+  .cta-1 {
+    font-size: 36px;
+  }
+  
+  .cta-2 {
+    font-size: 180px;
+    font-weight: 700;
+  }
+
+  .cta-3 {
+    top: 55px;
+  }
 }
