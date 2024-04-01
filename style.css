@@ -129,6 +129,14 @@ header {
   text-align: center;
 }
 
+.click-text {
+  font-size: 20px;
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .wrapper {
   height: auto;
   display: flex;
@@ -293,6 +301,10 @@ footer {
 
   .selected-project{
     font-size: 15px;
+  }
+
+  .click-text{
+    font-size: 13px;
   }
 
   .card{
